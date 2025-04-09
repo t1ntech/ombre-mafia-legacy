@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Gun, Lock, Mail, User } from "lucide-react";
+import { Sword, Lock, Mail, User } from "lucide-react";
 
 type AuthCardProps = {
   onLogin: (email: string, password: string) => void;
@@ -30,7 +30,7 @@ const AuthCard: React.FC<AuthCardProps> = ({ onLogin, onRegister }) => {
     <Card className="w-[350px] sm:w-[400px] bg-card border-mafia-gray/20 shadow-xl animate-fade-in">
       <CardHeader className="space-y-1">
         <div className="flex items-center gap-2 justify-center mb-2">
-          <Gun className="w-6 h-6 text-mafia-accent" />
+          <Sword className="w-6 h-6 text-mafia-accent" />
           <CardTitle className="text-2xl text-center font-bold">Mafia Legacy</CardTitle>
         </div>
         <CardDescription className="text-center text-mafia-lightGray">

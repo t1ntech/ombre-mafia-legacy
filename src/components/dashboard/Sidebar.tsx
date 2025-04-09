@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Gun, Briefcase, Map, Users, BarChart3, Swords, Building, Wallet, Settings } from "lucide-react";
+import { Sword, Briefcase, Map, Users, BarChart3, Swords, Building, Wallet, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type SidebarProps = {
@@ -10,7 +10,7 @@ type SidebarProps = {
 };
 
 const navItems = [
-  { name: "Profile", icon: <Gun className="w-5 h-5" /> },
+  { name: "Profile", icon: <Sword className="w-5 h-5" /> },
   { name: "Missions", icon: <Briefcase className="w-5 h-5" /> },
   { name: "Territory", icon: <Map className="w-5 h-5" /> },
   { name: "Family", icon: <Users className="w-5 h-5" /> },
@@ -40,7 +40,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         )}
       >
         <div className="p-4 border-b border-mafia-gray/20 flex items-center gap-2">
-          <Gun className="w-6 h-6 text-mafia-accent" />
+          <Sword className="w-6 h-6 text-mafia-accent" />
           <h2 className="text-xl font-bold">Mafia Legacy</h2>
         </div>
         

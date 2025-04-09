@@ -3,7 +3,7 @@ import React from "react";
 import AuthCard from "@/components/auth/AuthCard";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
-import { Building, Briefcase, User, Gun } from "lucide-react";
+import { Building, Briefcase, User, Sword } from "lucide-react";
 
 const AuthPage: React.FC = () => {
   const navigate = useNavigate();
@@ -34,7 +34,7 @@ const AuthPage: React.FC = () => {
         {/* Logo and title */}
         <div className="mb-8 text-center">
           <div className="flex items-center justify-center gap-3">
-            <Gun className="w-8 h-8 text-mafia-accent" />
+            <Sword className="w-8 h-8 text-mafia-accent" />
             <h1 className="text-3xl md:text-4xl font-bold">Mafia Legacy</h1>
           </div>
           <p className="mt-2 text-mafia-gray">The text-based Mafia MMORPG</p>
@@ -46,7 +46,7 @@ const AuthPage: React.FC = () => {
             {/* Left feature column (hidden on mobile) */}
             <div className="hidden md:flex flex-col space-y-6 justify-center items-end">
               <FeatureItem 
-                icon={<Gun className="w-5 h-5" />} 
+                icon={<Sword className="w-5 h-5" />} 
                 title="Crime Operations" 
                 description="Perform heists, robberies, and take over territories" 
               />
